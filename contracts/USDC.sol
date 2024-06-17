@@ -9,18 +9,4 @@ contract USDCToken is ERC20 {
     constructor(uint256 initialSupply) ERC20("USD Coin", "USDC") payable {
         _mint(msg.sender, initialSupply * 10 ** 6);
     }
-
-    /// @notice Mint USDC Token
-    /// @param account The account to mint USDC Token
-    /// @param amount The amount to mint USDC Token
-    function mint(address account, uint256 amount) public {
-        _mint(account, amount);
-    }
-
-    /// @notice Burn USDC Token
-    /// @param account The account to burn USDC Token
-    /// @param amount The amount to burn USDC Token
-    function burn(address account, uint256 amount) public {
-        _burn(account, amount);
-    }
 }
