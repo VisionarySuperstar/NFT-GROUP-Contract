@@ -11,7 +11,7 @@ async function main() {
     // Waiting for the contract deployment to be confirmed on the blockchain.
     await instanceUSDC.waitForDeployment()
 
-    // Logging the address of the deployed My404 contract.
+
     console.log(`USDC contract is deployed. Token address: ${instanceUSDC.target}`)
 
     const USDC_Address = await instanceUSDC.getAddress();
